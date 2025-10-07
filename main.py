@@ -74,12 +74,14 @@ numbers = [1, 2, 3, 4, 5]
 
 # TODO: Use a for loop with enumerate() to print both index and value
 # for index, value in enumerate(numbers):
+   # print(index, ":", value)
 
 
 # TODO: Create a dictionary and use a for loop to print all keys and values
-# person = {"name": "Kevin", "age": 25, "city": "Compiègne"}
+person = {"name": "Kevin", "age": 25, "city": "Compiègne"}
 
-# for keys, values in person.items(): print(f"{keys} : {values}")
+# for keys, values in person.items():
+   # print(f"{keys} : {values}")
 
 # TODO: Use a for loop with range() to print numbers from 1 to 10
 
@@ -91,23 +93,35 @@ squares = [x**2 for x in numbers]
 
 # TODO: Use a nested for loop to create a multiplication table (up to 5x5)
 
-
+# Exercice 4
 # TODO: Use a while loop to print numbers from 1 to 10
-i = 1
+# i = 1
 # while i < 11:
    # print(i, end=" ")
    # i += 1
 
 # TODO: Create a guessing game using a while loop
 # (generate a random number and let the user guess until correct)
-
+number = 5
+x = 0
+while x != number:
+   x = int(input("enter a number between 1 and 10 :"))
+   if x > number:
+      print("too high")
+   elif x < number:
+      print("too low")
+   else:
+      print("You won !")
 
 # TODO: Use a while loop to calculate the factorial of a number
+n = int(input("Enter a number"))
+i = 0
+fact = 1
+
+while i <= n:
+   i += 1
+   fact *= i
+print(f"the factorial of {n} is {fact}")
 
 # TODO: Implement a simple calculator using a while loop
 # (continue calculating until the user chooses to exit)
-
-ville = ("Paris", "barcelonne", "londre",  "berlin", "new-york")
-
-for i in range(1, 101):
-    print(i, end=" ")
