@@ -47,22 +47,24 @@ age = 25
 height = 1.91
 
 # TODO: Use the .format() method to create a sentence with these variables
-sentence_f = "my name is {}, I'm {} years old and I'm {} meters tall.".format(name, age, height)
-# print(sentence_f)
+sentence_f = "my name is {}, I'm {} years old and I'm {} meters tall."
+# print(sentence_f.format(name, age, height))
 
 # TODO: Use f-strings to create the same sentence
 sentence_fstr = f"my name is {name}, I'm {25} years old and I'm {1.91} meters tall."
 
 # TODO: Use the % operator for string formatting
-# sentence_pourcent = "my name is %s, I'm %d years old and I'm %.2f meters tall."%(name, age, height)
-# print(sentence_pourcent)
+# sentence_pourcent = "my name is %s, I'm %d years old and I'm %.2f meters tall."
+# print(sentence_pourcent.%(name, age, height))
 
 # TODO: Format a float number to display only two decimal places
 pi = 3.1415926535
-# pi_format = {pi: .2f}
+pi_formatted = f"{pi:.2f}"
+# print(f"{pi:.2f}")
 
 # TODO: Create a table-like output using string formatting
 # Print all formatted strings
+
 
 # TODO: Create a list of numbers
 numbers = [1, 2, 3, 4, 5]
@@ -85,6 +87,27 @@ numbers = [1, 2, 3, 4, 5]
 
 # TODO: Use list comprehension to create a new list of squares of numbers
 squares = [x**2 for x in numbers]
-print(squares)
+# print(squares)
 
 # TODO: Use a nested for loop to create a multiplication table (up to 5x5)
+
+
+# TODO: Use a while loop to print numbers from 1 to 10
+i = 1
+# while i < 11:
+   # print(i, end=" ")
+   # i += 1
+
+# TODO: Create a guessing game using a while loop
+# (generate a random number and let the user guess until correct)
+
+
+# TODO: Use a while loop to calculate the factorial of a number
+
+# TODO: Implement a simple calculator using a while loop
+# (continue calculating until the user chooses to exit)
+
+ville = ("Paris", "barcelonne", "londre",  "berlin", "new-york")
+
+for i in range(1, 101):
+    print(i, end=" ")
